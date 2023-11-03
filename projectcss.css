@@ -5,14 +5,44 @@ body {
 
 header {
     height: 80px;
-    flex-shrink: 0;
     border-radius: 0px 0px 12px 12px;
-    background: #262D34;
+    background-color: #262D34;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
 }
 
 .logotype {
-    width: 75px;
-    height: 75px;
-    margin-left: 40x;
-    flex-shrink:  0;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 5px;;
+    left: 2%;
+
+}
+.name{
+    display: flex;
+    position: absolute;
+    color: #FFF;
+    font-family: 'Russo One', sans-serif;
+    font-size: 35px;
+    left: 7%;
+    top: 5px;
+
+}
+.menu{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+}
+.mstyle{
+    list-style: none; /* Убирает маркеры по умолчанию */
+    display: flex; /* Преобразует ul в гибконтый контейнер */
+}
+.text{
+    font-size: 122px;/* текст для прокрутки сайта, нужно удалить*/
 }
