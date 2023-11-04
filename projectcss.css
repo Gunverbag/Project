@@ -21,7 +21,7 @@ header {
     height: 70px;
     position: absolute;
     top: 5px;;
-    left: 2%;
+    left: 5%;
 
 }
 .name{
@@ -29,22 +29,17 @@ header {
     color: #FFF;
     font-family: 'Russo One', sans-serif;
     font-size: 35px;
-    left: 7%;
+    left: 10%;
     top: -15px;
-}
-.menu{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-
 }
 .mstyle{
     list-style: none; /* Убирает маркеры*/
-    display: flex;
     justify-content: space-between;
+    justify-content: center;
     margin-right: 50px;
-    position: absolute;
-    top: 15px;
+    display: flex;
+    position: relative;
+    top: 10px;
 
 }
 .navi{
@@ -56,6 +51,86 @@ header {
     color: #FFF;
 
 }
-.text{
-    font-size: 122px;/* текст для прокрутки сайта, нужно удалить*/
+.search{
+    width: 215px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 12px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    background-color: #2C353D;
+    color: #FFF;
+    justify-content: center;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 18%;
+    top: 22px;
+}
+.buttheme{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #2C353D;
+    border: none;
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butbell{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #2C353D;
+    border: none;
+    position: absolute;
+    right: 6%;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.butlogin{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #2C353D;
+    border: none;
+    position: absolute;
+    right: 2%;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newbody{
+    width: 1262px;
+    height: 600px;
+    background-color: #262D34;
+    border-radius: 22px;
+    position: relative;
+    left: 6%;
+    top: 90px;
+    display: inline-flex;
+    align-items: center;
+}
+.bigimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.sonic{
+    border-radius: 22px;
+    width: 600px;
+    height: 330px;
+}
+.wake{
+    border-radius: 22px;
+    width: 600px;
+    height: 330px;
 }
