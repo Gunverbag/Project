@@ -1,6 +1,7 @@
 body {
     background-color: #1E2327;
     margin: 0;
+    text-align: center;
 }
 
 header {
@@ -112,25 +113,76 @@ header {
     height: 600px;
     background-color: #262D34;
     border-radius: 22px;
-    position: relative;
-    left: 6%;
-    top: 90px;
-    display: inline-flex;
-    align-items: center;
-}
-.bigimg{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%)
+}   
+.newbodybig{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 2%;
+}
+
+.newbodysmall{
+    display: flex;
+    justify-content: center;
+
 }
 .sonic{
     border-radius: 22px;
     width: 600px;
     height: 330px;
-}
+    margin: 15px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+} 
 .wake{
     border-radius: 22px;
     width: 600px;
     height: 330px;
+    margin: 15px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.redman{
+    width: 390px;
+    height: 221px;
+    border-radius: 22px;
+}
+.susi{
+    width: 390px;
+    height: 221px;
+    border-radius: 22px;
+    margin-left: 28px;
+    margin-right: 28px;
+
+}
+.car{
+    width: 390px;
+    height: 221px;
+    border-radius: 22px;
+
+}
+.newsblock{
+    position: relative;
+    display: flex;
+
+}
+.news{
+    width: 887px;
+    height: 200px;
+    background-color: #262D34;
+    border-radius: 22px;
+    display: flex;
+    position: absolute;
+    top: 105px;
+    left: 188px;
+    margin-bottom: 10px;
+}
+.lefttab{
+    width: 352px;
+    height: 406px;
+    background-color: #262D34;
+    border-radius: 22px;
 }
