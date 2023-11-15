@@ -7,7 +7,7 @@ body {
 header {
     height: 80px;
     border-radius: 0px 0px 12px 12px;
-    background-color: #262D34;
+    background-color:  #232A30;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,7 +34,7 @@ header {
     top: -15px;
 }
 .mstyle{
-    list-style: none; /* Убирает маркеры*/
+    list-style: none;
     justify-content: space-between;
     justify-content: center;
     margin-right: 50px;
@@ -50,7 +50,6 @@ header {
     line-height: 10px;
     text-decoration: none;
     color: #FFF;
-
 }
 .search{
     width: 215px;
@@ -135,8 +134,12 @@ header {
     margin: 15px;
     flex-wrap: wrap;
     align-content: flex-start;
+    display: flex;
 
 } 
+.sonictext{
+    position: absolute;
+}
 .wake{
     border-radius: 22px;
     width: 600px;
@@ -165,24 +168,137 @@ header {
 
 }
 .newsblock{
-    position: relative;
+    width: 862px;
     display: flex;
+    flex-direction: column;
+
 
 }
-.news{
-    width: 887px;
+.news1{
+    width: 860px;
     height: 200px;
     background-color: #262D34;
     border-radius: 22px;
+    margin-bottom: 20px;
     display: flex;
-    position: absolute;
-    top: 105px;
-    left: 188px;
-    margin-bottom: 10px;
 }
-.lefttab{
-    width: 352px;
-    height: 406px;
+.news2{
+    width: 860px;
+    height: 200px;
     background-color: #262D34;
     border-radius: 22px;
+    margin-bottom: 20px;
+    display: flex;
+
+    
+}
+.news3{
+    width: 860px;
+    height: 200px;
+    background-color: #262D34;
+    border-radius: 22px;
+    margin-bottom: 20px;
+    display: flex;
+
+    
+}
+.news4{
+    width: 860px;
+    height: 200px;
+    background-color: #262D34;
+    border-radius: 22px;
+    margin-bottom: 20px;
+    display: flex;
+   
+}
+.newsfoto{
+    width: 200px;
+    height: 180px;
+    border-radius: 22px;
+    background: #2C353D;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.mfire{
+    width: 200px;
+    height: 180px;
+    border-radius: 22px;
+}
+.textnews{
+    font-size: 25px;
+    font-family: 'Russo One', sans-serif;
+    color: #d8d8d8;
+    text-align: center;
+    text-align: left;
+    margin: 15px;
+}
+.box{
+    width: 600px;
+    height: 180px;
+}
+.typenews{
+    font-size: 25px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #b9b6b6;
+    text-align: center;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 7px ;
+}
+.timenews{
+    font-size: 25px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #b9b6b6;
+    text-align: center;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.lefttable{
+    width: 380px;
+    height: 860px;
+    border-radius: 22px;
+    background-color: #262D34;
+    display: flex;
+    flex-direction: column;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px ;
+}
+.topgames{
+    width: 360px;
+    height: 70px;
+    background-color: #2C353D;
+    border-radius: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family:'Source Sans 3', sans-serif;
+    color: #d8d8d8;
+    align-items: center;
+    text-decoration: none;
+
+
+}
+.gameweak{
+    width: 360px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family:'Source Sans 3', sans-serif;
+    color: #d8d8d8;
+    align-items: center;
+}
+.backgroundfooter{
+    background-color: #111314;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
