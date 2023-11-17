@@ -2,12 +2,13 @@ body {
     background-color: #1E2327;
     margin: 0;
     text-align: center;
+    display: flex;
 }
 
 header {
     height: 80px;
     border-radius: 0px 0px 12px 12px;
-    background-color:  #232A30;
+    background-color: #232A30;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,11 +22,13 @@ header {
     width: 70px;
     height: 70px;
     position: absolute;
-    top: 5px;;
+    top: 5px;
+    ;
     left: 5%;
 
 }
-.name{
+
+.name {
     position: absolute;
     color: #FFF;
     font-family: 'Russo One', sans-serif;
@@ -33,7 +36,8 @@ header {
     left: 10%;
     top: -15px;
 }
-.mstyle{
+
+.mstyle {
     list-style: none;
     justify-content: space-between;
     justify-content: center;
@@ -43,7 +47,8 @@ header {
     top: 10px;
 
 }
-.navi{
+
+.navi {
     line-height: 5px;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 25px;
@@ -51,7 +56,8 @@ header {
     text-decoration: none;
     color: #FFF;
 }
-.search{
+
+.search {
     width: 215px;
     height: 30px;
     padding: 2px;
@@ -67,7 +73,8 @@ header {
     right: 18%;
     top: 22px;
 }
-.buttheme{
+
+.buttheme {
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -80,7 +87,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.butbell{
+
+.butbell {
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -94,7 +102,8 @@ header {
     align-items: center;
 
 }
-.butlogin{
+
+.butlogin {
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -107,7 +116,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.newbody{
+
+.newbody {
     width: 1262px;
     height: 600px;
     background-color: #262D34;
@@ -116,18 +126,20 @@ header {
     top: 100px;
     left: 50%;
     transform: translate(-50%, 0%)
-}   
-.newbodybig{
+}
+
+.newbodybig {
     display: flex;
     justify-content: center;
 }
 
-.newbodysmall{
+.newbodysmall {
     display: flex;
     justify-content: center;
 
 }
-.sonic{
+
+.sonic {
     border-radius: 22px;
     width: 600px;
     height: 330px;
@@ -136,11 +148,13 @@ header {
     align-content: flex-start;
     display: flex;
 
-} 
-.sonictext{
+}
+
+.sonictext {
     position: absolute;
 }
-.wake{
+
+.wake {
     border-radius: 22px;
     width: 600px;
     height: 330px;
@@ -148,12 +162,14 @@ header {
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.redman{
+
+.redman {
     width: 390px;
     height: 221px;
     border-radius: 22px;
 }
-.susi{
+
+.susi {
     width: 390px;
     height: 221px;
     border-radius: 22px;
@@ -161,20 +177,23 @@ header {
     margin-right: 28px;
 
 }
-.car{
+
+.car {
     width: 390px;
     height: 221px;
     border-radius: 22px;
 
 }
-.newsblock{
+
+.newsblock {
     width: 862px;
     display: flex;
     flex-direction: column;
 
 
 }
-.news1{
+
+.news1 {
     width: 860px;
     height: 200px;
     background-color: #262D34;
@@ -182,7 +201,8 @@ header {
     margin-bottom: 20px;
     display: flex;
 }
-.news2{
+
+.news2 {
     width: 860px;
     height: 200px;
     background-color: #262D34;
@@ -190,9 +210,10 @@ header {
     margin-bottom: 20px;
     display: flex;
 
-    
+
 }
-.news3{
+
+.news3 {
     width: 860px;
     height: 200px;
     background-color: #262D34;
@@ -200,18 +221,20 @@ header {
     margin-bottom: 20px;
     display: flex;
 
-    
+
 }
-.news4{
+
+.news4 {
     width: 860px;
     height: 200px;
     background-color: #262D34;
     border-radius: 22px;
     margin-bottom: 20px;
     display: flex;
-   
+
 }
-.newsfoto{
+
+.newsfoto {
     width: 200px;
     height: 180px;
     border-radius: 22px;
@@ -219,12 +242,14 @@ header {
     margin-top: 10px;
     margin-left: 10px;
 }
-.mfire{
+
+.mfire {
     width: 200px;
     height: 180px;
     border-radius: 22px;
 }
-.textnews{
+
+.textnews {
     font-size: 25px;
     font-family: 'Russo One', sans-serif;
     color: #d8d8d8;
@@ -232,11 +257,13 @@ header {
     text-align: left;
     margin: 15px;
 }
-.box{
+
+.box {
     width: 600px;
     height: 180px;
 }
-.typenews{
+
+.typenews {
     font-size: 25px;
     font-family: 'Source Sans 3', sans-serif;
     color: #b9b6b6;
@@ -244,9 +271,10 @@ header {
     text-align: left;
     margin-left: 15px;
     margin-top: 40px;
-    margin-bottom: 7px ;
+    margin-bottom: 7px;
 }
-.timenews{
+
+.timenews {
     font-size: 25px;
     font-family: 'Source Sans 3', sans-serif;
     color: #b9b6b6;
@@ -256,21 +284,24 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.lefttable{
+
+.lefttable {
     width: 380px;
     height: 860px;
     border-radius: 22px;
     background-color: #262D34;
     display: flex;
     flex-direction: column;
-    
+
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 30px ;
+    margin-top: 30px;
 }
-.topgames{
+
+.topgames {
     width: 360px;
     height: 70px;
     background-color: #2C353D;
@@ -278,27 +309,115 @@ header {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 25px;
-    font-family:'Source Sans 3', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     color: #d8d8d8;
     align-items: center;
     text-decoration: none;
 
 
 }
-.gameweak{
+
+.gameweak {
     width: 360px;
     height: 70px;
     margin-top: 10px;
     margin-left: 10px;
     font-size: 30px;
-    font-family:'Source Sans 3', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     color: #d8d8d8;
     align-items: center;
 }
-.backgroundfooter{
+
+.footer {
     background-color: #111314;
+    width: 100%;
     height: 200px;
+    z-index: 2;
+    position: relative;
+    top: 1600px;
+
+}
+
+.leftfoot {
+    display: grid;
+    width: 50%;
+    height: 200px;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1000px 1fr;
+}
+
+.logotype {}
+
+.footlogo {
+    height: 60px;
+    width: 600px;
+}
+
+.foottext {
+    width: 600px;
+    height: 100px;
     display: flex;
-    flex-direction: column;
-    z-index: 1;
+    flex-wrap: wrap;
+    margin-left: 75px;
+}
+
+.ftext {
+    white-space: nowrap;
+    font-size: 22px;
+    color: #d8d8d8;
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.footsocial {
+    height: 60px;
+    width: 400px;
+    margin-top: 20px;
+    align-items: start;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.com {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+    text-align: left;
+}
+
+.term {
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-size: 20px;
+    grid-column: span 2;
+    text-align: left;
+    margin: 0;
+}
+
+.terms {
+    height: 60px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 40px, 40px;
+    gap: 2px;
+}
+
+.adult {
+    width: 40px;
+    height: 40px;
 }
