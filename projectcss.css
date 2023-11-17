@@ -138,7 +138,40 @@ header {
     justify-content: center;
 
 }
+.textfoto{
+    position: relative;
+}
+.overtext{
+    position: absolute;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    top: 70%;
+    left: 5%;
+    width: 570px;
+}
+.overtext2{
+    position: absolute;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    top: 70%;
+    left: 5%;
+    width: 350px;
+}
+.overtext3{
+    position: absolute;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    top: 70%;
+    left: 8%;
+    width: 350px;
 
+}
 .sonic {
     border-radius: 22px;
     width: 600px;
@@ -146,8 +179,6 @@ header {
     margin: 15px;
     flex-wrap: wrap;
     align-content: flex-start;
-    display: flex;
-
 }
 
 .sonictext {
