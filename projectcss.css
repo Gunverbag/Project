@@ -2,7 +2,8 @@ body {
     background-color: #1E2327;
     margin: 0;
     text-align: center;
-    display: flex;
+    display:flex;
+    justify-content: center;
 }
 
 header {
@@ -138,10 +139,12 @@ header {
     justify-content: center;
 
 }
-.textfoto{
+
+.textfoto {
     position: relative;
 }
-.overtext{
+
+.overtext {
     position: absolute;
     color: white;
     font-family: 'Russo One', sans-serif;
@@ -151,7 +154,8 @@ header {
     left: 5%;
     width: 570px;
 }
-.overtext2{
+
+.overtext2 {
     position: absolute;
     color: white;
     font-family: 'Russo One', sans-serif;
@@ -161,7 +165,8 @@ header {
     left: 5%;
     width: 350px;
 }
-.overtext3{
+
+.overtext3 {
     position: absolute;
     color: white;
     font-family: 'Russo One', sans-serif;
@@ -172,6 +177,7 @@ header {
     width: 350px;
 
 }
+
 .sonic {
     border-radius: 22px;
     width: 600px;
