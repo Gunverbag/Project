@@ -1,9 +1,9 @@
 body {
     background-color: #1E2327;
     margin: 0;
-    text-align: center;
-    display:flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -28,6 +28,7 @@ header {
     left: 5%;
 
 }
+
 
 .name {
     position: absolute;
@@ -118,260 +119,220 @@ header {
     align-items: center;
 }
 
-.newbody {
+.backfoto {
     width: 1262px;
-    height: 600px;
-    background-color: #262D34;
+    height: 550px;
     border-radius: 22px;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, 0%)
-}
-
-.newbodybig {
-    display: flex;
-    justify-content: center;
-}
-
-.newbodysmall {
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    z-index: 0;
 
 }
 
-.textfoto {
+.content {
+    width: 1262px;
+    height: auto;
+    border-radius: 22px;
+    background-color: #232A30;
+    z-index: 1;
     position: relative;
-}
-
-.overtext {
-    position: absolute;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    font-size: 30px;
-    text-align: left;
-    top: 70%;
-    left: 5%;
-    width: 570px;
-}
-
-.overtext2 {
-    position: absolute;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    font-size: 25px;
-    text-align: left;
-    top: 70%;
-    left: 5%;
-    width: 350px;
-}
-
-.overtext3 {
-    position: absolute;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    font-size: 25px;
-    text-align: left;
-    top: 70%;
-    left: 8%;
-    width: 350px;
-
-}
-
-.sonic {
-    border-radius: 22px;
-    width: 600px;
-    height: 330px;
-    margin: 15px;
+    top: 350px;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-.sonictext {
-    position: absolute;
-}
-
-.wake {
-    border-radius: 22px;
-    width: 600px;
-    height: 330px;
-    margin: 15px;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-.redman {
-    width: 390px;
-    height: 221px;
-    border-radius: 22px;
-}
-
-.susi {
-    width: 390px;
-    height: 221px;
-    border-radius: 22px;
-    margin-left: 28px;
-    margin-right: 28px;
 
 }
 
-.car {
-    width: 390px;
-    height: 221px;
-    border-radius: 22px;
-
+.body {
+    margin-top: 100px;
 }
 
-.newsblock {
-    width: 862px;
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.news1 {
-    width: 860px;
-    height: 200px;
-    background-color: #262D34;
-    border-radius: 22px;
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.news2 {
-    width: 860px;
-    height: 200px;
-    background-color: #262D34;
-    border-radius: 22px;
-    margin-bottom: 20px;
-    display: flex;
-
-
-}
-
-.news3 {
-    width: 860px;
-    height: 200px;
-    background-color: #262D34;
-    border-radius: 22px;
-    margin-bottom: 20px;
-    display: flex;
-
-
-}
-
-.news4 {
-    width: 860px;
-    height: 200px;
-    background-color: #262D34;
-    border-radius: 22px;
-    margin-bottom: 20px;
-    display: flex;
-
-}
-
-.newsfoto {
-    width: 200px;
-    height: 180px;
-    border-radius: 22px;
-    background: #2C353D;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.mfire {
-    width: 200px;
-    height: 180px;
-    border-radius: 22px;
-}
-
-.textnews {
-    font-size: 25px;
-    font-family: 'Russo One', sans-serif;
-    color: #d8d8d8;
-    text-align: center;
-    text-align: left;
-    margin: 15px;
-}
-
-.box {
-    width: 600px;
-    height: 180px;
-}
-
-.typenews {
-    font-size: 25px;
-    font-family: 'Source Sans 3', sans-serif;
-    color: #b9b6b6;
-    text-align: center;
-    text-align: left;
-    margin-left: 15px;
-    margin-top: 40px;
-    margin-bottom: 7px;
-}
-
-.timenews {
-    font-size: 25px;
-    font-family: 'Source Sans 3', sans-serif;
-    color: #b9b6b6;
-    text-align: center;
-    text-align: left;
-    margin-left: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.lefttable {
-    width: 380px;
-    height: 860px;
-    border-radius: 22px;
-    background-color: #262D34;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.grid {
+.information {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 30px;
+    grid-template-columns: 360px 600px;
+    margin-left: -220px;
+    position: absolute;
+    margin-top: 45px;
 }
 
-.topgames {
-    width: 360px;
-    height: 70px;
+.gamefoto {
+    height: 306px;
+    width: 306px;
+    border-radius: 22px;
+    grid-row: 1 /span 2;
+}
+
+.title {
+    color: white;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+}
+
+.info {
+    color: #979DA2;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.table {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 150px 250px;
+    width: 400px;
+    border: 0;
+}
+
+.infoa {
+    text-decoration: none;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.info3 {
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom:10px ;
+}
+.description{
+    width: 1180px;
+    height: 200px;
+    position: relative;
+    top: 400px;
+}
+.descr{
+    width: 1180px;
+    height: 140px;
     background-color: #2C353D;
     border-radius: 22px;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 25px;
-    font-family: 'Source Sans 3', sans-serif;
-    color: #d8d8d8;
-    align-items: center;
-    text-decoration: none;
-
-
+    display:flex;
+    justify-content: center;
 }
-
-.gameweak {
-    width: 360px;
-    height: 70px;
-    margin-top: 10px;
-    margin-left: 10px;
+.textchapter{
     font-size: 30px;
-    font-family: 'Source Sans 3', sans-serif;
-    color: #d8d8d8;
-    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    color: #FFF;
 }
+.textcontent{
+    font-size: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    color:white;
+    text-align: center;
+    
+}
+.similary{
+    height: 400px;
+    width: 1181px;
+    position: relative;
+    top: 290px;
 
+}
+.similarfoto{
+    display: flex;
+}
+.simfoto{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.textsim{
+    font-size: 21px;
+    font-family: 'Russo One', sans-serif;
+    color: #FFF;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 250px;
+}
+.revcell{
+    display: flex;
+    width: 1181px;
+}
+.Reviews{
+    position:relative;
+    top: 170px;
+}
+.commet{
+    width: 363px;
+    height: 346px;
+    background-color: #2C353D;
+    border-radius: 22px;
+    display: grid;
+    grid-template-rows: 60px 230px 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.backuser{
+    background-color: #1E2327;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+.user{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+}
+.rev{
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+    text-indent: 10px;
+}
+.timepublucation{
+    font-family: 'Source Sans 3', sans-serif;
+    color:white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.Screenshots{
+    position: relative;
+    top: 50px;
+}
+.screenfoto{
+    display: grid;
+    grid-template-columns: 560px 288px 288px;
+    gap: 15px;
+}
+.bigfoto{
+    grid-row: 1 /span 2;
+}
+.systemrequirements{
+    position: relative;
+    top: -70px;
+}
+.sysbody{
+    width: 1181px;
+    height: 375px;
+    background-color: #2C353D;
+    border-radius: 22px;
+    justify-content: center;
+    display: flex;
+    
+}
+.systable{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 50px 500px;
+    gap: 25px;
+}
+.textsystem{
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    font-size: 25px;
+}
 .footer {
     background-color: #111314;
     width: 100%;
     height: 200px;
     z-index: 2;
     position: relative;
-    top: 1600px;
+    top: 160px;
 
 }
 
@@ -385,9 +346,6 @@ header {
     display: grid;
     grid-template-columns: 1000px 1fr;
 }
-
-.logotype {}
-
 .footlogo {
     height: 60px;
     width: 600px;
