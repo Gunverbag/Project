@@ -140,9 +140,7 @@ header {
 
 }
 
-.textfoto {
-    position: relative;
-}
+
 
 .overtext {
     position: absolute;
@@ -153,6 +151,7 @@ header {
     top: 70%;
     left: 5%;
     width: 570px;
+    z-index: initial;
 }
 
 .overtext2 {
@@ -177,7 +176,14 @@ header {
     width: 350px;
 
 }
+.textfoto {
+    position: relative;
+    transition: transform 0.5s  ease;
 
+}
+.textfoto:hover{
+    transform: scale(1.02);
+}
 .sonic {
     border-radius: 22px;
     width: 600px;
@@ -215,11 +221,10 @@ header {
 
 }
 
-.car {
+.car{
     width: 390px;
     height: 221px;
     border-radius: 22px;
-
 }
 
 .newsblock {
@@ -237,6 +242,10 @@ header {
     border-radius: 22px;
     margin-bottom: 20px;
     display: flex;
+    transition: transform 0.5s ease;
+}
+.news1:hover{
+    transform: scale(1.02);
 }
 
 .news2 {
@@ -246,6 +255,10 @@ header {
     border-radius: 22px;
     margin-bottom: 20px;
     display: flex;
+    transition: transform 0.5s ease;
+}
+.news2:hover{
+    transform: scale(1.02);
 
 
 }
@@ -257,6 +270,10 @@ header {
     border-radius: 22px;
     margin-bottom: 20px;
     display: flex;
+    transition: transform 0.5s ease;
+}
+.news3:hover{
+    transform: scale(1.02);
 
 
 }
@@ -268,6 +285,10 @@ header {
     border-radius: 22px;
     margin-bottom: 20px;
     display: flex;
+    transition: transform 0.5s ease;
+}
+.news4:hover{
+    transform: scale(1.02);
 
 }
 
@@ -350,8 +371,11 @@ header {
     color: #d8d8d8;
     align-items: center;
     text-decoration: none;
+    transition: transform 0.5s ease;
 
-
+}
+.topgames:hover{
+    transform: scale(1.02);
 }
 
 .gameweak {

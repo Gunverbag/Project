@@ -197,50 +197,64 @@ header {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 20px;
     list-style: none;
-    margin-bottom:10px ;
+    margin-bottom: 10px;
 }
-.description{
+
+.description {
     width: 1180px;
     height: 200px;
     position: relative;
     top: 400px;
 }
-.descr{
+
+.descr {
     width: 1180px;
     height: 116px;
     background-color: #2C353D;
     border-radius: 22px;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-.textchapter{
+
+.textchapter {
     font-size: 30px;
     font-family: 'Russo One', sans-serif;
     color: #FFF;
 }
-.textcontent{
+
+.textcontent {
     font-size: 20px;
     font-family: 'Source Sans 3', sans-serif;
-    color:white;
+    color: white;
     text-align: center;
-    
+
 }
-.similary{
+
+.similary {
     height: 400px;
     width: 1181px;
     position: relative;
     top: 290px;
 
 }
-.similarfoto{
+
+.similarfoto {
     display: flex;
+    
 }
-.simfoto{
+
+.simfoto {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
+    transition: transform 0.5s ease;
 }
-.textsim{
+
+.simfoto:hover {
+    transform: scale(1.1);
+}
+
+.textsim {
     font-size: 21px;
     font-family: 'Russo One', sans-serif;
     color: #FFF;
@@ -248,15 +262,18 @@ header {
     margin-left: 10px;
     margin-top: 250px;
 }
-.revcell{
+
+.revcell {
     display: flex;
     width: 1181px;
 }
-.Reviews{
-    position:relative;
+
+.Reviews {
+    position: relative;
     top: 170px;
 }
-.commet{
+
+.commet {
     width: 363px;
     height: 346px;
     background-color: #2C353D;
@@ -266,73 +283,99 @@ header {
     margin-left: 20px;
     margin-right: 20px;
 }
-.backuser{
+
+.backuser {
     background-color: #1E2327;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
 }
-.user{
+
+.user {
     font-family: 'Russo One', sans-serif;
     font-size: 20px;
     color: white;
     margin-left: 15px;
 }
-.rev{
+
+.rev {
     font-family: 'Source Sans 3', sans-serif;
     color: white;
     font-size: 17px;
     margin-left: 10px;
     text-indent: 10px;
 }
-.timepublucation{
+
+.timepublucation {
     font-family: 'Source Sans 3', sans-serif;
-    color:white;
+    color: white;
     font-size: 20px;
     margin-left: 20px;
 }
-.Screenshots{
+
+.Screenshots {
     position: relative;
     top: 50px;
 }
-.screenfoto{
+
+.screenfoto {
     display: grid;
     grid-template-columns: 560px 288px 288px;
     gap: 15px;
 }
-.bigfoto{
+
+.bigfoto {
     grid-row: 1 /span 2;
+    transition: transform 0.5s ease;
 }
-.systemrequirements{
+
+.bigfoto:hover {
+    transform: scale(1.02);
+}
+
+.smallfoto {
+    transition: transform 0.5s ease;
+}
+
+.smallfoto:hover {
+    transform: scale(1.05);
+
+}
+
+.systemrequirements {
     position: relative;
     top: -70px;
 }
-.sysbody{
+
+.sysbody {
     width: 1181px;
     height: 375px;
     background-color: #2C353D;
     border-radius: 22px;
     justify-content: center;
     display: flex;
-    
+
 }
-.systable{
+
+.systable {
     display: grid;
     grid-template-columns: 500px 500px;
     grid-template-rows: 50px 500px;
     gap: 25px;
 }
-.textsystem{
+
+.textsystem {
     font-family: 'Source Sans 3', sans-serif;
     color: white;
     font-size: 25px;
 }
+
 .footer {
     background-color: #111314;
     width: 100%;
     height: 200px;
     z-index: 2;
     position: relative;
-    top: 160px;
+    top: 190px;
 
 }
 
@@ -346,6 +389,7 @@ header {
     display: grid;
     grid-template-columns: 1000px 1fr;
 }
+
 .footlogo {
     height: 60px;
     width: 600px;

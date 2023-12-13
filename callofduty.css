@@ -235,10 +235,15 @@ header {
 .similarfoto{
     display: flex;
 }
-.simfoto{
+.simfoto {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
+    transition: transform 0.5s ease;
+}
+
+.simfoto:hover {
+    transform: scale(1.1);
 }
 .textsim{
     font-size: 21px;
@@ -299,8 +304,22 @@ header {
     grid-template-columns: 560px 288px 288px;
     gap: 15px;
 }
-.bigfoto{
+.bigfoto {
     grid-row: 1 /span 2;
+    transition: transform 0.5s ease;
+}
+
+.bigfoto:hover {
+    transform: scale(1.02);
+}
+
+.smallfoto {
+    transition: transform 0.5s ease;
+}
+
+.smallfoto:hover {
+    transform: scale(1.05);
+
 }
 .systemrequirements{
     position: relative;
@@ -332,7 +351,7 @@ header {
     height: 200px;
     z-index: 2;
     position: relative;
-    top: 160px;
+    top: 190px;
 
 }
 
