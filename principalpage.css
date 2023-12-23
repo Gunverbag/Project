@@ -2,7 +2,7 @@ body {
     background-color: #1E2327;
     margin: 0;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -126,7 +126,8 @@ header {
     position: absolute;
     top: 100px;
     left: 50%;
-    transform: translate(-50%, 0%)
+    transform: translate(-50%, 0%);
+    box-shadow: 0px 1px 10px black;
 }
 
 .newbodybig {
@@ -176,14 +177,17 @@ header {
     width: 350px;
 
 }
+
 .textfoto {
     position: relative;
-    transition: transform 0.5s  ease;
+    transition: transform 0.5s ease;
 
 }
-.textfoto:hover{
+
+.textfoto:hover {
     transform: scale(1.02);
 }
+
 .sonic {
     border-radius: 22px;
     width: 600px;
@@ -221,7 +225,7 @@ header {
 
 }
 
-.car{
+.car {
     width: 390px;
     height: 221px;
     border-radius: 22px;
@@ -244,7 +248,8 @@ header {
     display: flex;
     transition: transform 0.5s ease;
 }
-.news1:hover{
+
+.news1:hover {
     transform: scale(1.02);
 }
 
@@ -257,7 +262,8 @@ header {
     display: flex;
     transition: transform 0.5s ease;
 }
-.news2:hover{
+
+.news2:hover {
     transform: scale(1.02);
 
 
@@ -272,7 +278,8 @@ header {
     display: flex;
     transition: transform 0.5s ease;
 }
-.news3:hover{
+
+.news3:hover {
     transform: scale(1.02);
 
 
@@ -287,7 +294,8 @@ header {
     display: flex;
     transition: transform 0.5s ease;
 }
-.news4:hover{
+
+.news4:hover {
     transform: scale(1.02);
 
 }
@@ -374,7 +382,8 @@ header {
     transition: transform 0.5s ease;
 
 }
-.topgames:hover{
+
+.topgames:hover {
     transform: scale(1.02);
 }
 
@@ -409,6 +418,7 @@ header {
     display: grid;
     grid-template-columns: 1000px 1fr;
 }
+
 .footlogo {
     height: 60px;
     width: 600px;
@@ -478,4 +488,12 @@ header {
 .adult {
     width: 40px;
     height: 40px;
+}
+
+@media screen (max-width: 1000px) {
+    .newbody {
+        width: 100px
+    }
+
+
 }
