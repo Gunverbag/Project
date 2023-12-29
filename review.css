@@ -85,16 +85,31 @@ input {
 
 .headerbutton {
     margin-left: 5%;
+    display: flex;
 
 }
 
-button {
+.hbut {
     background-color: #2C353D;
     border: none;
     width: 40px;
     height: 40px;
     border-radius: 8px;
     margin-right: 10px;
+}
+
+.hamburger {
+    background-color: #2C353D;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: none;
+}
+
+.burger {
+    margin: 5px 0 0 -2px;
 }
 
 
@@ -108,6 +123,7 @@ button {
     position: relative;
     top: 75px;
     margin-top: 10px;
+    margin-bottom: 85px;
     width: 80%;
     height: auto;
     border-radius: 22px;
@@ -163,6 +179,7 @@ button {
     font-family: 'Russo One', sans-serif;
     color: rgb(232, 232, 232);
     text-align: left;
+    font-size: 40px;
 
 }
 
@@ -170,7 +187,7 @@ button {
     font-family: 'Source Sans 3', sans-serif;
     text-align: left;
     color: rgb(232, 232, 232);
-    font-size: 25px;
+    font-size: 35px;
     margin: 0;
 
 }
@@ -195,18 +212,19 @@ button {
     font-family: 'Source Sans 3', sans-serif;
     text-align: left;
     color: rgb(130, 130, 130);
-    font-size: 20px;
+    font-size: 25px;
     margin: 0;
 }
 
 .videoconteiner {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
-footer{
+
+footer {
     background-color: #111314;
     height: 200px;
     width: 100%;
-    position: relative ;
+    position: relative;
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 70px 100px;
@@ -215,27 +233,196 @@ footer{
     justify-content: space-around;
 
 }
-.footerlogo{
+
+.footerlogo {
     display: flex;
     align-items: center;
 }
-.footerhelp{
+
+.footerhelp {
     display: flex;
     flex-wrap: wrap;
 }
-.helptext{
+
+.helptext {
     color: white;
     font-size: 18px;
     font-family: 'Source Sans 3', sans-serif;
     margin-left: 7px;
 }
-.prevention{
+
+.prevention {
     display: flex;
 }
-.preventiontext{
+
+.preventiontext {
     text-align: left;
     margin-left: 13px;
     color: white;
-    font-family:'Source Sans 3', sans-serif ;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 15px;
+}
+
+.block {
+    width: 500px;
+    height: 500px;
+    background-color: #111314;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1201px) {
+    .bodytext {
+        font-size: 30px;
+    }
+
+    .titletext {
+        font-size: 35px;
+    }
+
+    .titleprev {
+        font-size: 40px;
+    }
+
+    .prevtext {
+        font-size: 25px;
+    }
+
+    .gridprevtext {
+        grid-template-columns: 200px 270px;
+    }
+
+    .comment {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1113px) {
+    .hamburger {
+        display: block;
+    }
+    form{
+        margin-left: 80px;
+    }
+
+    .headerbutton {
+        height: auto;
+    }
+
+    .info {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+    .bodytext {
+        font-size: 25px;
+    }
+
+    .titletext {
+        font-size: 30px;
+    }
+
+    .titleprev {
+        font-size: 30px;
+    }
+
+    .prevtext {
+        font-size: 20px;
+    }
+
+    .gridprevtext {
+        grid-template-columns: 160px 200px;
+        grid-template-rows: 50px 25px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .bodytext {
+        font-size: 18px;
+    }
+
+    .titletext {
+        font-size: 23px;
+    }
+
+    .titleprev {
+        font-size: 25px;
+    }
+
+    .comment {
+        font-size: 15px;
+    }
+
+    .prevtext {
+        font-size: 15px;
+    }
+
+    .gridprevtext {
+        grid-template-columns: 130px 160px;
+        grid-template-rows: 30px 20px;
+    }
+
+    form {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .prevention {
+        display: none;
+    }
+
+    .footerhelp {
+        grid-column: 1 /span 2;
+        justify-content: center;
+
+    }
+
+    footer {
+        grid-template-columns: 220px 260px;
+    }
+}
+@media screen and (max-width: 520px) {
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3, 60px)
+    }
+    .footerhelp{
+        grid-column: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 481px) {
+    .bodytext {
+        font-size: 14px;
+    }
+
+    .titletext {
+        font-size: 18px;
+    }
+
+    .titleprev {
+        font-size: 18px;
+    }
+
+    .comment {
+        font-size: 10px;
+    }
+
+    .prevtext {
+        font-size: 10px;
+    }
+
+    .gridprevtext {
+        grid-template-columns: 90px 120px;
+        grid-template-rows: 15px 18px;
+    }
+    .hbut{
+        display: none;
+    }
+
 }
