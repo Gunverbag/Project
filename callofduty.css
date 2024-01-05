@@ -1,9 +1,11 @@
 body {
     background-color: #1E2327;
     margin: 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header {
@@ -13,7 +15,7 @@ header {
     background: #262D34;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     z-index: 5;
 
@@ -83,10 +85,11 @@ input {
 
 .headerbutton {
     margin-left: 5%;
+    display: flex;
 
 }
 
-button {
+.hbut {
     background-color: #2C353D;
     border: none;
     width: 40px;
@@ -95,45 +98,59 @@ button {
     margin-right: 10px;
 }
 
+.hamburger {
+    background-color: #2C353D;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: none;
+}
+
+.burger {
+    margin: 5px 0 0 -2px;
+}
+
 .backfoto {
-    width: 1262px;
-    height: 550px;
+    width: 90%;
+    height: 500px;
     border-radius: 22px;
     position: fixed;
-    z-index: 0;
+    z-index: -1;
 
 }
 
 .content {
-    width: 1262px;
-    height: 2700px;
+
+    margin-top: 350px;
+    width: 90%;
+    height: auto;
     border-radius: 22px;
     background-color: #232A30;
-    z-index: 1;
-    position: relative;
-    top: 350px;
+    text-align: left;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.body {
-    margin-top: 100px;
-}
-
-.information {
+.infogrid {
     display: grid;
-    grid-template-columns: 360px 600px;
-    margin-left: -220px;
-    position: absolute;
-    margin-top: 45px;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: 30% auto;
+    align-items: start;
+    justify-items: start;
+
 }
 
 .gamefoto {
-    height: 306px;
-    width: 306px;
+
+    width: 90%;
     border-radius: 22px;
+    margin-left: 20px;
+    margin-top: 20px;
     grid-row: 1 /span 2;
 }
 
@@ -141,145 +158,181 @@ button {
     color: white;
     font-size: 35px;
     font-family: 'Russo One', sans-serif;
-    margin: 0;
 }
 
-.info {
+li {
+    list-style: none;
+}
+
+.infogame {
     color: #979DA2;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 20px;
-    list-style: none;
-    margin-bottom: 10px;
+
 }
 
-.table {
-    padding: 0;
+.informationaboutgame {
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+
+}
+
+.principalinfo {
     display: grid;
-    grid-template-columns: 150px 250px;
-    width: 400px;
-    border: 0;
+    grid-template-columns: 50% 80%;
+
 }
 
-.infoa {
-    text-decoration: none;
-    color: white;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.info3 {
-    color: white;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 20px;
-    list-style: none;
-    margin-bottom:10px ;
-}
-.description{
-    width: 1180px;
-    height: 200px;
-    position: relative;
-    top: 400px;
-}
-.descr{
-    width: 1180px;
-    height: 140px;
-    background-color: #2C353D;
-    border-radius: 22px;
-    display:flex;
-    justify-content: center;
-}
-.textchapter{
-    font-size: 30px;
+h1 {
     font-family: 'Russo One', sans-serif;
-    color: #FFF;
+    color: white;
+    margin-left: 20px;
 }
-.textcontent{
-    font-size: 20px;
-    font-family: 'Source Sans 3', sans-serif;
-    color:white;
-    text-align: center;
-    
-}
-.similary{
-    height: 400px;
-    width: 1181px;
-    position: relative;
-    top: 290px;
+
+.description {
+    background-color: #262D34;
+    width: 90%;
+    height: auto;
+    border-radius: 22px;
 
 }
-.similarfoto{
-    display: flex;
+
+.descrcontent {
+    font-size: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    text-align: center;
+
 }
-.simfoto {
-    position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
+
+
+
+.similargame {
+    display: flex;
+
+}
+
+.simgame1 {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
     transition: transform 0.5s ease;
 }
 
-.simfoto:hover {
+.simgame1:hover {
     transform: scale(1.1);
 }
-.textsim{
+.simgame {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    transition: transform 0.5s ease;
+}
+
+.simgame:hover {
+    transform: scale(1.1);
+}
+.simfoto {
+    width: 100%;
+    height: auto;
+}
+
+.textsim {
     font-size: 21px;
     font-family: 'Russo One', sans-serif;
     color: #FFF;
     position: absolute;
-    margin-left: 10px;
-    margin-top: 250px;
 }
-.revcell{
+
+.revcell {
     display: flex;
-    width: 1181px;
 }
-.Reviews{
-    position:relative;
-    top: 170px;
-}
-.commet{
-    width: 363px;
-    height: 346px;
+
+.commet {
+
     background-color: #2C353D;
     border-radius: 22px;
     display: grid;
-    grid-template-rows: 60px 230px 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    grid-template-rows: 60px 200px 50px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
-.backuser{
+.commet1 {
+
+    background-color: #2C353D;
+    border-radius: 22px;
+    display: grid;
+    grid-template-rows: 60px 200px 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.backuser {
     background-color: #1E2327;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
 }
-.user{
+
+.user {
     font-family: 'Russo One', sans-serif;
     font-size: 20px;
     color: white;
     margin-left: 15px;
 }
-.rev{
+
+.rev {
     font-family: 'Source Sans 3', sans-serif;
     color: white;
     font-size: 17px;
     margin-left: 10px;
     text-indent: 10px;
+    overflow: auto;
 }
-.timepublucation{
+
+.rev::-webkit-scrollbar {
+    width: 10px;
+}
+
+.rev::-webkit-scrollbar-thumb {
+    background-color: #1E2327;
+    border-radius: 6px;
+}
+
+.rev::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #232A30;
+    border-radius: 3px
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.timepublucation {
     font-family: 'Source Sans 3', sans-serif;
-    color:white;
+    color: white;
     font-size: 20px;
     margin-left: 20px;
 }
-.Screenshots{
-    position: relative;
-    top: 50px;
-}
-.screenfoto{
+
+.screenfoto {
     display: grid;
-    grid-template-columns: 560px 288px 288px;
+    grid-template-columns: 560px repeat(2, 1fr);
     gap: 15px;
 }
+
 .bigfoto {
     grid-row: 1 /span 2;
     transition: transform 0.5s ease;
@@ -297,35 +350,46 @@ button {
     transform: scale(1.05);
 
 }
-.systemrequirements{
+
+.smallfoto2 {
+    transition: transform 0.5s ease;
+}
+
+.smallfoto2:hover {
+    transform: scale(1.05);
+
+}
+
+.systemrequirements {
     position: relative;
     top: -70px;
 }
-.sysbody{
-    width: 1181px;
-    height: 375px;
+
+
+.systable {
     background-color: #2C353D;
+    width: 90%;
     border-radius: 22px;
-    justify-content: center;
-    display: flex;
-    
-}
-.systable{
+    height: auto;
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 50px 500px;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50px 310px;
     gap: 25px;
+    margin-bottom: 30px;
 }
-.textsystem{
+
+.textsystem {
     font-family: 'Source Sans 3', sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 24px;
 }
-footer{
+
+footer {
     background-color: #111314;
     height: 200px;
     width: 100%;
-    position: relative ;
+    position: relative;
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 70px 100px;
@@ -334,27 +398,239 @@ footer{
     justify-content: space-around;
 
 }
-.footerlogo{
+
+.footerlogo {
     display: flex;
     align-items: center;
 }
-.footerhelp{
+
+.footerhelp {
     display: flex;
     flex-wrap: wrap;
 }
-.helptext{
+
+.helptext {
     color: white;
     font-size: 18px;
     font-family: 'Source Sans 3', sans-serif;
     margin-left: 7px;
 }
-.prevention{
+
+.prevention {
     display: flex;
 }
-.preventiontext{
+
+.preventiontext {
     text-align: left;
     margin-left: 13px;
     color: white;
-    font-family:'Source Sans 3', sans-serif ;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 15px;
+}
+
+.block {
+    width: 500px;
+    height: 500px;
+    background-color: #111314;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1330px) {
+    .smallfoto2 {
+        display: none;
+
+    }
+
+    .screenfoto {
+        grid-template-columns: 560px 288px;
+    }
+
+}
+
+@media screen and (max-width: 1201px) {
+    .textsystem{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1113px) {
+    .hamburger {
+        display: block;
+    }
+
+    form {
+        margin-left: 80px;
+    }
+
+    .headerbutton {
+        height: auto;
+    }
+
+    .info {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .smallfoto2 {
+        display: block;
+        width: 328px;
+        height: 268px;
+    }
+
+    .bigfoto {
+        grid-row: none;
+        height: 226px;
+        width: 288px;
+        display: none;
+
+    }
+
+    .smallfoto {
+        width: 328px;
+        height: 268px;
+    }
+
+    .screenfoto {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .textsim{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px ;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .smallfoto {
+        display: none;
+    }
+
+    .smallfoto2 {
+        display: none;
+    }
+
+    .bigfoto {
+        display: block;
+        height: auto;
+        width: 90%;
+    }
+
+    .screenfoto {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    form {
+        display: none;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .infogame{
+        font-size: 18px;
+    }
+    .informationaboutgame{
+        font-size: 18px;
+    }
+    .infogrid{
+        grid-template-columns: 35% 65%;
+    }
+    .principalinfo{
+        grid-template-columns: 40% 80%;
+    }
+    .textsim{
+        font-size: 15px
+    }
+    h1{
+        font-size: 25px;
+    }
+    .textsystem{
+        font-size: 20px;
+    }
+    .backfoto{
+        height: 400px;
+    }
+    .content{
+        margin-top: 250px ;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .prevention {
+        display: none;
+    }
+
+    .footerhelp {
+        grid-column: 1 /span 2;
+        justify-content: center;
+
+    }
+
+    footer {
+        grid-template-columns: 220px 260px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 60px)
+    }
+
+    .footerhelp {
+        grid-column: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 481px) {
+
+    .hbut {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 426px) {
+    .backfoto{
+        display: none;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .infogrid{
+        grid-template-columns: none;
+        justify-items: center;
+    }
+    .gamefoto{
+        margin: 17px;
+        margin-bottom: 0px;
+    }
+    .title{
+      margin-left: 25%;
+    }
+    .principalinfo{
+        grid-template-columns: 40% 60%;
+    }
+    .simgame    {
+        display: none;
+    }
+    .textsim{
+        font-size: 20px;
+    }
+    .commet{
+        display: none;
+    }
+    .textsystem{
+        font-size: 17px;
+    }
+    .systable{
+        gap:10px;
+        grid-template-rows: 40px 330px;
+    }
 }
