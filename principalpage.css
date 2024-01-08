@@ -15,7 +15,7 @@ header {
     background: #262D34;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     z-index: 5;
 
@@ -85,16 +85,31 @@ input {
 
 .headerbutton {
     margin-left: 5%;
+    display: flex;
 
 }
 
-button {
+.hbut {
     background-color: #2C353D;
     border: none;
     width: 40px;
     height: 40px;
     border-radius: 8px;
     margin-right: 10px;
+}
+
+.hamburger {
+    background-color: #2C353D;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: none;
+}
+
+.burger {
+    margin: 5px 0 0 -2px;
 }
 
 .newcontainer {
@@ -191,9 +206,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
-
 }
 
 h1 {
@@ -233,7 +245,7 @@ a {
     font-family: 'Source Sans 3', sans-serif;
     color: white;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -256,6 +268,7 @@ a {
 
 
 }
+
 .news{
     background-color:#262D34;
     border-radius: 22px;
@@ -352,4 +365,134 @@ footer {
     background-color: transparent;
 }
 
+@media screen and (max-width: 1113px) {
+    .hamburger {
+        display: block;
+    }
+    form{
+        margin-left: 80px;
+    }
+
+    .headerbutton {
+        height: auto;
+    }
+
+    .info {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1025px) {
+    .namenewsbig{
+        font-size:24px;
+    }
+    .namenewssmall{
+        font-size: 17px;
+    }
+    .populartext{
+        font-size: 20px;
+    }
+    .titletext{
+        font-size: 23px;
+    }
+    .infonewstext{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width:770px) {
+    form{
+        display: none;
+    }
+    .smallnews1{
+        display: none;
+    }
+    .smallnews2{
+        display: none;
+    }
+    .smallnews3{
+        display: none;
+    }
+    .bignews{
+        margin-bottom: 15px;
+    }
+    .namenewsbig{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .titlefoto{
+        width: 40%;
+    }
+    .titletext{
+        font-size: 21px;
+    }
+    .infonewstext{
+        font-size: 19px ;
+    }
+}
+@media screen and (max-width: 611px) {
+    .prevention {
+        display: none;
+    }
+
+    .footerhelp {
+        grid-column: 1 /span 2;
+        justify-content: center;
+
+    }
+
+    footer {
+        grid-template-columns: 220px 260px;
+    }
+}
+@media screen and (max-width: 520px) {
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3, 60px)
+    }
+    .footerhelp{
+        grid-column: auto;
+    }
+    
+}@media screen and (max-width: 481px) {
+
+    .hbut {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 426px) {
+    .newcontainer{
+        display: block;
+    }
+    .bignews2{
+        display: none;
+    }
+    .namenewsbig{
+        font-size: 25px;
+        width: 70%;
+    }
+    .principalnews{
+        display: block;
+    }
+    .mostpopular{
+        margin-bottom: 10px;
+    }
+    .titlefoto{
+        border-radius: 10px;
+        width: 40%;
+        height: 120px;
+    }
+    .titletext{
+        font-size: 17px;
+        margin-bottom: 3%;
+    }
+    .infonewstext{
+        font-size: 15px;
+    }
+
+    
+}
 
